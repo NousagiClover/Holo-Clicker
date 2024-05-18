@@ -1,0 +1,56 @@
+.holoDisplay
+{
+  text-align: center;
+}
+
+.holoDisplay h1
+{
+  margin-bottom: 0;
+}
+
+.holoDisplay h4
+{
+  margin: 0;
+}
+
+.itemBox
+{
+  margin-left: 20px;
+  width: 550px;
+  height: 300px;
+  border: 3px solid #2180c0;
+  overflow-y: scroll;
+}
+
+.item
+{
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.item .itemIcon
+{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.item .itemInfo *
+{
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.item .itemName
+{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item .itemInfo span
+{
+  margin: 0px;
+}

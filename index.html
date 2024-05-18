@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Holo クリッカー</title>
+</head>
+<body>
+  <div class="holoDisplay">
+    <h1><span id="TEXT_HoloCoin">0</span> holo coin</h1>
+    <h4><span id="TEXT_Hcps">0</span> HCps</h4>
+    <img id="IMG_HoloCoin" src="img/holo.png">
+  </div>
+
+  <!-- Item UI -->
+  <div class="itemBox">
+    <div class="item">
+      <figure class="itemIcon"><img id="IMG_Debug" src="img/debug.png"></figure>
+      <div class="itemInfo">
+        <p class="itemName">デバッグ</p>
+        <p>開発者専用デバッグアイテム</p>
+        <p>コストを100万増やす</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure class="itemIcon"><img id="IMG_Cursor" src="img/cursor.png"></figure>
+      <div class="itemInfo">
+        <p class="itemName">カーソル</p>
+        <p>カーソルにクリックを手伝ってもらう (<span id="BHCPS_Cursor">0</span>/HCps)</p>
+        <p>購入数/コスト: <span id="TEXT_Cursor">0</span> / <span id="COST_Cursor">0</span></p>
+        <p>HCps: <span id="HCPS_Cursor">0</span></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure class="itemIcon"><img id="IMG_Listener" src="img/listener.png"></figure>
+      <div class="itemInfo">
+        <p class="itemName">リスナー</p>
+        <p>リスナーにクリックを手伝ってもらう (<span id="BHCPS_Listener">0</span>/HCps)</p>
+        <p>購入数/コスト: <span id="TEXT_Listener">0</span> / <span id="COST_Listener">0</span></p>
+        <p>HCps: <span id="HCPS_Listener">0</span></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure class="itemIcon"><img id="IMG_Company" src="img/company.png"></figure>
+      <div class="itemInfo">
+        <p class="itemName">ホロ会社</p>
+        <p>会社でホロコインを稼ぐ (<span id="BHCPS_Company">0</span>/HCps)</p>
+        <p>購入数/コスト: <span id="TEXT_Company">0</span> / <span id="COST_Company">0</span></p>
+        <p>HCps: <span id="HCPS_Company">0</span></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <figure class="itemIcon"><img id="IMG_Bank" src="img/bank.png"></figure>
+      <div class="itemInfo">
+        <p class="itemName">ホロ銀行</p>
+        <p>ホロ銀行から利息を得る (<span id="BHCPS_Bank">0</span>/HCps)</p>
+        <p>購入数/コスト: <span id="TEXT_Bank">0</span> / <span id="COST_Bank">0</span></p>
+        <p>HCps: <span id="HCPS_Bank">0</span></p>
+      </div>
+    </div>
+  </div>
+  <!-- Item UI -->
+
+  <!-- Audio data -->
+  <audio id="AUDIO_HoloCoin"><source src="audio/holo_coin.mp3" type="audio/mp3"></audio>
+  <audio id="AUDIO_SelectItem"><source src="audio/select_item.mp3" type="audio/mp3"></audio>
+  <audio id="AUDIO_NoSelectItem"><source src="audio/no_select_item.mp3" type="audio/mp3"></audio>
+  <!-- Audio data -->
+
+  <script src="main.js"></script>
+</body>
+</html>
